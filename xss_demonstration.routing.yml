@@ -1,0 +1,15 @@
+xss.demonstration.form:
+  path: '/attacking-xss'
+  defaults:
+    _form: '\Drupal\xss_demonstration\Form\ExperimentForm'
+    _title: 'Cross site scripting attack.'
+  requirements:
+    _permission: 'access content'
+
+xss.demonstration.controller:
+  path: 'show-results/{title}'
+  defaults:
+    _controller:  '\Drupal\xss_demonstration\Controller\AdminController::showResults'
+    title: 'support-request'
+  requirements:
+    _permission: 'access content'

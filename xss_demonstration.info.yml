@@ -1,0 +1,4 @@
+name: Session Hijacking demo
+description: 'This is an session hijacking experiment module.'
+type: module
+core: 8.x
