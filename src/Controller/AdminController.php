@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 
 class AdminController extends ControllerBase {
-	public function showResults(Request $request) {
+  public function showResults(Request $request) {
     $build['test'] = ['#markup' => $request->query->get('title')];
     return $build;
   }

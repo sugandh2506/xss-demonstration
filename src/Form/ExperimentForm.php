@@ -35,7 +35,7 @@ class ExperimentForm extends FormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     
-  	$data= $form_state->getValue('xss_title');
+    $data= $form_state->getValue('xss_title');
     //$data= strip_tags($form_state->getValue('xss_title'));
     $form_state->setRedirect('xss.demonstration.controller', [], ['query' => [
     'title' => $data,
